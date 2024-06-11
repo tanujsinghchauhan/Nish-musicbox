@@ -5,3 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
         preloader.style.display = 'none';
     }, 2000); // 2 seconds delay
 });
+document.getElementById('playPauseSVG').addEventListener('click', function() {
+    this.classList.toggle('clicked');
+});
