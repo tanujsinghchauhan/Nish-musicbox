@@ -63,218 +63,25 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
- /* cassette styling */
+ 
 
-.box {
-    border: 2px solid var(--site-color2);
-}   
-.outer {
-    height: 350px;
-    width: 700px;
-    
-    border-radius: 5%;
 
+ .hero {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
 }
-.song {
+
+
+ 
+  
+.blank {
+    width: 100%;
     height: 100px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    border: 2px dashed var(--site-color2);
-
-}
-.deco1 {
-    height: 20px;
-    width: 40px;
-    border-radius: 50px;
-    left: 0;
-    margin-left: 3px;
-    margin-top: 5px;
-    
-
-}
-.deco2 {
-    height: 20px;
-    width: 40px;
-    border-radius: 50px;
-    right: 0;
-    margin-right: 3px;
-    margin-top: 5px;
-
 }
 
-.round1 {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 80px;
-}
-.round2 {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    margin-top: 40px;
-    margin-right: 0;
-    margin-left: 80px;
-}
-.player {
-    height: 80px;
-    width: 300px;
-    display: flex;
-    border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    
-}
-.visualiser {
-    height: 50px;
-    width: 155px;
-    margin-top: auto;
-    margin-bottom: auto;
-
-}
-.buttons {
-    width: 100%;
-    display: flex;
-    border-radius: 25%;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-.decoration {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    order: 0;
-    margin-top: 5px;
-}
-.cassette {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
-.gear {
-    margin: auto 2px auto 2px;
-}
-
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.gear {
-    transform-origin: 50% 50%; /* Adjust based on the gear's center */
-    animation: rotate 5s linear infinite;
-}
-
-.backward {
-    border-radius: 4px;
-    height: 60px;
-    cursor: pointer;
-    
-
-}
-.forward {
-    border-radius: 4px;
-    height: 60px;
-    cursor: pointer;
-}
-.play {
-    border-radius: 4px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-   
-    
-
-#playPauseSVG path {
-    transition: fill 0.3s;
-}
-
-#playPauseSVG.clicked path {
-    fill: white;
-}
-
-
-/* navbar and upper css*/
-
-
-
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content:space-evenly;
-}
-#logotext {
-    color: var(--site-color2);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.music {
-    color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
-    width: 245px;
-    height: 64px;
-}
-.players {
-    color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
-    width: 224px;
-    height: 66px;
-    }
-.about {
-    color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
-    width: 256px;
-    height: 66px;
-    cursor: pointer;
-    right: 0;
-}
-.logoimg {
-    position: absolute; /* Or use 'fixed' if you want it to stay in place even when the page is scrolled */
-    top: 0;
-    left: 0;
-    /* Additional optional styling */
-    margin: 0;
-    padding: 0;
-
-}
-
-.topbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-.hero {
-    display: flex;
-    justify-content:center;
-    height: auto;
-}
-
-
-
-
-    
+  
+     
 

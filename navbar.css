@@ -1,0 +1,108 @@
+/* navbar and upper css*/
+
+
+
+a {
+    text-decoration: none;
+    color: var(--site-color2);
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--site-color1);
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+#logoimg {
+    display: flex;
+    align-items: center;
+}
+
+#logotext {
+    color: var(--site-color2);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.music, .players, .about {
+    color: var(--site-color2);
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropbtn {
+    background-color: var(--site-color1);
+    color: var(--site-color2);
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--site-color1);
+    color: var(--site-color2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 3px dotted #FF9900;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: var(--site-color2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--site-color2);
+    font-family: 'Courier New', Courier, monospace;
+}

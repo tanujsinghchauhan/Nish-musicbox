@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById('playPauseSVG').addEventListener('click', function() {
     this.classList.toggle('clicked');
 });
+

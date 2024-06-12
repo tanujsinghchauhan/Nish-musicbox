@@ -1,0 +1,147 @@
+/* cassette styling */
+
+.box {
+    border: 2px solid var(--site-color2);
+}   
+.outer {
+    height: 350px;
+    width: 700px;
+    
+    border-radius: 5%;
+
+}
+.song {
+    height: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border: 2px dashed var(--site-color2);
+
+}
+.deco1 {
+    height: 20px;
+    width: 40px;
+    border-radius: 50px;
+    left: 0;
+    margin-left: 3px;
+    margin-top: 5px;
+    
+
+}
+.deco2 {
+    height: 20px;
+    width: 40px;
+    border-radius: 50px;
+    right: 0;
+    margin-right: 3px;
+    margin-top: 5px;
+
+}
+
+.round1 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 80px;
+}
+.round2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-left: 80px;
+}
+.player {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    
+}
+.visualiser {
+    height: 50px;
+    width: 155px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    border-radius: 25%;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.decoration {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    order: 0;
+    margin-top: 5px;
+}
+.cassette {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.gear {
+    margin: auto 2px auto 2px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gear {
+    transform-origin: 50% 50%; /* Adjust based on the gear's center */
+     animation: rotate 5s linear infinite;
+} 
+
+.backward {
+    border-radius: 4px;
+    height: 60px;
+    cursor: pointer;
+    
+
+}
+.forward {
+    border-radius: 4px;
+    height: 60px;
+    cursor: pointer;
+}
+.play {
+    border-radius: 4px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+   
+    
+
+#playPauseSVG path {
+    transition: fill 0.3s;
+}
+
+#playPauseSVG.clicked path {
+    fill: white;
+} 
