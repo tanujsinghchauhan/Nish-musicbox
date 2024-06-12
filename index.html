@@ -136,7 +136,14 @@
               <div class="deco1 box"></div>
               <div class="deco2 box"></div>
         </div>
-            <div class="song box"></div>
+            <div class="song box">
+              <audio id="song">
+                <source src="Improv for Evil.mp3" type="audio/mpeg">
+              </audio>
+              <p>Name of song</p>
+              <p>Name of artist</p>
+              <input type="range" value="0" id="progress">
+            </div>
             
             <div class="player box">
               <div class="gear">
@@ -188,8 +195,8 @@
                         </defs>
                         </svg>
                 </div>
-                <div class="play box">
-                  <svg id="playPauseSVG" width="122" height="95" viewBox="0 0 122 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="play box" onclick="playPause()">
+                  <svg class="pauses"id="playPauseSVG" width="122" height="95" viewBox="0 0 122 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="material-symbols:play-pause">
                           <path id="Vector" d="M25.4167 64.125V30.875L55.9167 47.5L25.4167 64.125ZM66.0833 63.3333V31.6667H76.25V63.3333H66.0833ZM86.4167 63.3333V31.6667H96.5833V63.3333H86.4167Z" />
                       </g>
