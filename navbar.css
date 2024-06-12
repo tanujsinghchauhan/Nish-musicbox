@@ -1,22 +1,25 @@
 /* navbar and upper css*/
-
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
 a {
     text-decoration: none;
     color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "VT323", monospace;
 } 
 
 .navbar {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     background-color: var(--site-color1);
-    overflow: hidden;
-    padding: 0 10px;
+   
 }
 
 .navbar ul {
@@ -38,8 +41,9 @@ a {
 
 #logotext {
     color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "VT323", monospace;
     font-weight: bold;
+    font-size: xx-large;
 }
 
 .links {
@@ -49,9 +53,10 @@ a {
 
 .music, .players, .about {
     color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "VT323", monospace;
     cursor: pointer;
     font-weight: bold;
+    font-size: xx-large;
 }
 
 .dropbtn {
@@ -59,10 +64,11 @@ a {
     color: var(--site-color2);
     padding: 16px;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "VT323", monospace;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    font-size: xx-large;
 }
 
 .dropdown {
@@ -104,5 +110,9 @@ a {
 a {
     text-decoration: none;
     color: var(--site-color2);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "VT323", monospace;
+}
+
+a:hover {
+    color: #fff;
 }
