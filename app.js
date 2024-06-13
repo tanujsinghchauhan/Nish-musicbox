@@ -45,3 +45,10 @@ function playPause() {
         playPauseSVG.classList.remove("plays");
 
  }
+
+ 
+//uploading file
+document.getElementById('uploadLink').addEventListener('click', function() {
+    document.getElementById('thefile').click();
+});
+

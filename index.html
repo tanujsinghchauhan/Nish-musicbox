@@ -107,8 +107,13 @@
                     <li class="dropdown">
                         <button class="music dropbtn">Music</button>
                         <div class="dropdown-content">
-                            <a href="#">default</a>
-                            <a href="#">upload your own</a>
+                            <a href="#">Finally See The Light</a>
+                            <a href="#">Improv for Evil</a>
+                            <a href="#">Study and Relax</a>
+                            <a href="#">The Celebrated Minuet</a>
+                            <a href="#">Midnight, The Stars and You</a>
+                            <input type="file" id="thefile" accept="audio/*"/>
+                            <span id="uploadLink"> Upload your own music</span>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -137,12 +142,15 @@
               <div class="deco2 box"></div>
         </div>
             <div class="song box">
-              <audio id="song">
-                <source src="Improv for Evil.mp3" type="audio/mpeg">
-              </audio>
               <p>Name of song</p>
-              <p>Name of artist</p>
-              <input type="range" value="0" id="progress">
+
+
+                  
+                    <audio id="song">
+                    <source src="Finally See The Light.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                 
             </div>
             
             <div class="player box">
@@ -158,7 +166,11 @@
                 </svg></div>
 
 
-                <div class="visualiser box"></div>
+                <div class="visualiser box">
+                  
+                  
+                  <input type="range" value="0" id="progress">
+                </div>
                 <div class="gear">
                 <svg width="64" height="62" viewBox="0 0 94 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="pepicons-pencil:gear-circle">

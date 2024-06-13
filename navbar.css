@@ -116,3 +116,21 @@ a {
 a:hover {
     color: #fff;
 }
+#thefile {
+    display: none;
+   
+   
+  }
+  #uploadLink {
+    color: var(--site-color2);
+    font-family: "VT323", monospace;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#uploadLink:hover {
+    color: #fff;
+
+}
