@@ -52,3 +52,27 @@ document.getElementById('uploadLink').addEventListener('click', function() {
     document.getElementById('thefile').click();
 });
 
+
+//changing song name on click 
+const button = document.getElementsByClassName("musicselect");
+const paragraph = document.getElementsByClassName("songname")[0];
+//loop for all buttons
+for (let btn of button ) {
+btn.addEventListener('click', function(){
+    const buttonText = this.textContent;
+    paragraph.textContent = buttonText;
+});
+}
+
+//displaying uploaded file name
+const fileInput = document.getElementsByClassName("uploader")[0];
+const para = document.getElementsByClassName("songname")[0];
+fileInput.addEventListener('change', function(){
+    if(this.files && this.files.length > 0) {
+        const fileName = this.files[0].name ;
+        paragraph.textContent = fileName;
+    } else {
+        paragraph.textContent = "Song name";
+    }
+});
+

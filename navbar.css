@@ -88,14 +88,25 @@ a {
     border-radius: 10px;
 }
 
-.dropdown-content a {
+.dropdown-content a  {
     color: var(--site-color2);
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    margin-bottom: 5px;
+}
+.dropdown-content button {
+    color: var(--site-color2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 5px;
 }
 
 .dropdown-content a:hover {
+    color: #f1f1f1;
+}
+.dropdown-content button:hover {
     color: #f1f1f1;
 }
 
@@ -133,4 +144,12 @@ a:hover {
 #uploadLink:hover {
     color: #fff;
 
+}
+
+.musicselect {
+    background-color: var(--site-color1);
+    color: var(--site-color2);
+    font-family: "VT323", monospace;
+    border: none;
+    margin-bottom: 5px;
 }
