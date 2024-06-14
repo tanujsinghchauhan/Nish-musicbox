@@ -107,11 +107,31 @@
                     <li class="dropdown">
                         <button class="music dropbtn">Music</button>
                         <div class="dropdown-content">
-                            <button class="music1 musicselect"href="#">Finally See The Light</button>
-                            <button class="music2 musicselect"href="#">Improv for Evil</button>
-                            <button class="music3 musicselect"href="#">Study and Relax</button>
-                            <button class="music4 musicselect"href="#">The Celebrated Minuet</button>
-                            <button class="music5 musicselect"href="#">Midnight, The Stars and You</button>
+                            <button class="changeaudio music1 musicselect">
+                              <audio id="audio1">
+                                <source src="Finally See The Light.mp3" type="audio/mpeg">
+                            </audio>Finally See The Light
+                            </button>
+                            <button class="changeaudio music2 musicselect">
+                              <audio id="audio2">
+                                <source src="Improv for Evil.mp3" type="audio/mpeg">
+                            </audio>Improv for Evil
+                          </button>
+                            <button class="changeaudio music3 musicselect">
+                              <audio id="audio3">
+                                <source src="Study and Relax.mp3" type="audio/mpeg">
+                            </audio>Study and Relax
+                          </button>
+                            <button class="changeaudio music4 musicselect">
+                              <audio id="audio4">
+                                <source src="The Celebrated Minuet.mp3" type="audio/mpeg">
+                            </audio>The Celebrated Minuet
+                          </button>
+                            <button class="changeaudio music5 musicselect">
+                              <audio id="audio5">
+                                <source src="ludwig-van-beethoven-moonlight-sonata-classical-remix-8097.mp3" type="audio/mpeg">
+                            </audio>Moonlight Sonata
+                          </button>
                             <input type="file" class="uploader" id="thefile" accept="audio/*"/>
                             <span id="uploadLink"> Upload your own music</span>
                         </div>
@@ -142,13 +162,14 @@
               <div class="deco2 box"></div>
         </div>
             <div class="song box">
-              <p class="songname">Name of song</p>
+              <p class="songname">Default(Finally See The Light)</p>
 
 
                   
-                    <audio id="song">
-                    <source src="Finally See The Light.mp3" type="audio/mpeg">
+                    <audio class="audioPlayer" id="song">
+                    <source class="audioSource" src="Finally See The Light.mp3" type="audio/mpeg">
                   </audio>
+                  
                   
                  
             </div>

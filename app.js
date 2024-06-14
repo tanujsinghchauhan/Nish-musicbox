@@ -76,3 +76,40 @@ fileInput.addEventListener('change', function(){
     }
 });
 
+//changing song on click
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.changeaudio');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const audio = this.querySelector('audio');
+            const source = audio.querySelector('source').src;
+            const mainAudio = document.getElementById('song');
+            const mainAudioSource = mainAudio.querySelector('source');
+
+            mainAudioSource.src = source;
+            mainAudio.load();
+            mainAudio.play();
+        });
+    });
+});
+
+//adding audio from outside source
+const audioInput = document.querySelector('.uploader');
+        const audioPlayer = document.querySelector('.audioPlayer');
+        const audioSource = audioPlayer.querySelector('.audioSource');
+
+        audioInput.addEventListener('change', function(event) {
+            const files = event.target.files;
+            if (files.length > 0) {
+                const fileURL = URL.createObjectURL(files[0]);
+                audioSource.src = fileURL;
+                audioPlayer.load();
+                audioPlayer.play();
+            }
+    });
+
+
+
+//visualiser
+
