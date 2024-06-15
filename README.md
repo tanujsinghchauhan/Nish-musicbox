@@ -9,7 +9,7 @@ This project implements a simple music player with an audio visualizer using HTM
 - Real-time audio visualizer displaying the waveform of the playing audio.
 - a retro ui with player selection to choose from a variety of players.
 
-### Usage
+# Usage
 
 ## Playing Audio:
 
