@@ -46,8 +46,7 @@ h3 {
     justify-content: center;
     align-self: center;
     margin-top: 70px;
-    margin-left: 25%;
-    margin-right: 25%;
+   
 }
 .Linkedin , .Instagram , .DeviantArt {
     display: flexbox;

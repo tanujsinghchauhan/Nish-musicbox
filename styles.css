@@ -1,9 +1,12 @@
 html, body {
     height: 100%;
-    width: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+
+    width: 100%;
     --a: max(36px, 4vw) / max(48px, 5vw) var(--ff);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; 
 }
 
 svg {
