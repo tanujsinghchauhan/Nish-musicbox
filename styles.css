@@ -96,6 +96,291 @@ line-height: normal;
 }
 
 
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 600px;
+        height: 300px;
+    }
+    .song {
+        width: 350px;
+        height: 90px;
+    }
+    .player {
+        width: 250px;
+    }
+    .visualiser {
+        width: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 500px;
+        height: 250px;
+    }
+    .song {
+        width: 300px;
+        height: 80px;
+    }
+    .player {
+        width: 200px;
+    }
+    .visualiser {
+        width: 110px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 400px;
+        height: 200px;
+    }
+    .song {
+        width: 250px;
+        height: 70px;
+    }
+    .player {
+        width: 180px;
+    }
+    .visualiser {
+        width: 90px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 300px;
+        height: 150px;
+    }
+    .song {
+        width: 200px;
+        height: 60px;
+    }
+    .player {
+        width: 150px;
+    }
+    .visualiser {
+        width: 70px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 250px;
+        height: 125px;
+    }
+    .song {
+        width: 180px;
+        height: 50px;
+    }
+    .player {
+        width: 120px;
+    }
+    .visualiser {
+        width: 60px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 200px;
+        height: 100px;
+    }
+    .song {
+        width: 150px;
+        height: 40px;
+    }
+    .player {
+        width: 100px;
+    }
+    .visualiser {
+        width: 50px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
+        margin: 10px 0;
+    }
+    #logotext {
+        font-size: large;
+    }
+    .dropbtn, .music, .players, .about {
+        font-size: large;
+        padding: 10px;
+    }
+    .navbar li {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 280px) {
+    svg:hover {
+        fill:#FFF;
+        color: #FFF;
+    }
+    #logotext:hover {
+        color:#fff;
+    }
+    .outer {
+        width: 180px;
+        height: 90px;
+    }
+    .song {
+        width: 130px;
+        height: 30px;
+    }
+    .player {
+        width: 80px;
+    }
+    .visualiser {
+        width: 40px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
+        margin: 10px 0;
+    }
+    #logotext {
+        font-size: medium;
+    }
+    .dropbtn, .music, .players, .about {
+        font-size: medium;
+        padding: 8px;
+    }
+    .navbar li {
+        margin: 0 8px;
+    }
+}
+
  
 
 
