@@ -1,389 +1,433 @@
-html, body {
-    height: 100%;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 
-    width: 100%;
-    --a: max(36px, 4vw) / max(48px, 5vw) var(--ff);
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box; 
+  width: 100%;
+  --a: max(36px, 4vw) / max(48px, 5vw) var(--ff);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
 }
 
 svg {
-    fill: var(--site-color2);
+  fill: var(--site-color2);
 }
-svg:hover {
-    fill:#FFF;
-    color: #FFF;
+.pauses:hover {
+  fill: #fff;
+  color: #fff;
+}
+.beck:hover {
+  fill: #fff;
+  color: #fff;
+}
+.forwd:hover {
+  fill: #fff;
+  color: #fff;
 }
 #logotext:hover {
-    color:#fff;
+  color: #fff;
 }
 .vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-:root {
-    --site-color1: #000;
-    --site-color2: #ff9900;
-    --site-color3: #fff;
-    --loading-color: #000;
-  }
-body {
-    display: flex; /* Use flexbox to help control layout */
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: var(--site-color1);
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
-
+:root {
+  --site-color1: #000;
+  --site-color2: #ff9900;
+  --site-color3: #fff;
+  --loading-color: #000;
+}
+body {
+  display: flex; /* Use flexbox to help control layout */
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--site-color1);
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
 
 .loadingscreen {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 #preloader {
-    position: fixed; /* Stay in place */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    z-index: 9999; /* High z-index to be on top */
-    background-color: #000; /* Fallback background color */
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 9999; /* High z-index to be on top */
+  background-color: #000; /* Fallback background color */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 /* Set the SVG fill color */
 #preloader svg rect {
-    fill: #FF9900;
+  fill: #ff9900;
 }
 
 /*preloader text */
 #loadingtext1 {
-color: var(--site-color2);
-text-align: center;
-font-family: "VT323", monospace;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
+  color: var(--site-color2);
+  text-align: center;
+  font-family: "VT323", monospace;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #loadingtext2 {
-color: #FFF;
-text-align: center;
-font-family: VT323;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
- 
-
-
- .hero {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: VT323;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 600px;
-        height: 300px;
-    }
-    .song {
-        width: 350px;
-        height: 90px;
-    }
-    .player {
-        width: 250px;
-    }
-    .visualiser {
-        width: 130px;
-    }
+  /* svg:hover {
+    fill: #fff;
+    color: #fff;
+  } */
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 600px;
+    height: 300px;
+  }
+  .song {
+    width: 350px;
+    height: 90px;
+  }
+  .player {
+    width: 250px;
+  }
+  .visualiser {
+    width: 130px;
+  }
 }
 
 @media (max-width: 992px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 500px;
-        height: 250px;
-    }
-    .song {
-        width: 300px;
-        height: 80px;
-    }
-    .player {
-        width: 200px;
-    }
-    .visualiser {
-        width: 110px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  /* svg:hover {
+    fill: #fff;
+    color: #fff;
+  } */
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 500px;
+    height: 250px;
+  }
+  .song {
+    width: 300px;
+    height: 80px;
+  }
+  .player {
+    width: 200px;
+  }
+  .visualiser {
+    width: 110px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 768px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 400px;
-        height: 200px;
-    }
-    .song {
-        width: 250px;
-        height: 70px;
-    }
-    .player {
-        width: 180px;
-    }
-    .visualiser {
-        width: 90px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
+  .pauses:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .beck:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .forwd:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 400px;
+    height: 200px;
+  }
+  .song {
+    width: 250px;
+    height: 70px;
+  }
+  .player {
+    width: 180px;
+  }
+  .visualiser {
+    width: 90px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 576px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 300px;
-        height: 150px;
-    }
-    .song {
-        width: 200px;
-        height: 60px;
-    }
-    .player {
-        width: 150px;
-    }
-    .visualiser {
-        width: 70px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-    .icons {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
-        margin: 10px 0;
-    }
+  .pauses:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .beck:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .forwd:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 300px;
+    height: 150px;
+  }
+  .song {
+    width: 200px;
+    height: 60px;
+  }
+  .player {
+    width: 150px;
+  }
+  .visualiser {
+    width: 70px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons .Linkedin,
+  .icons .Instagram,
+  .icons .DeviantArt {
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 375px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 250px;
-        height: 125px;
-    }
-    .song {
-        width: 180px;
-        height: 50px;
-    }
-    .player {
-        width: 120px;
-    }
-    .visualiser {
-        width: 60px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-    .icons {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
-        margin: 10px 0;
-    }
+  svg:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 250px;
+    height: 125px;
+  }
+  .song {
+    width: 180px;
+    height: 50px;
+  }
+  .player {
+    width: 120px;
+  }
+  .visualiser {
+    width: 60px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons .Linkedin,
+  .icons .Instagram,
+  .icons .DeviantArt {
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 320px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 200px;
-        height: 100px;
-    }
-    .song {
-        width: 150px;
-        height: 40px;
-    }
-    .player {
-        width: 100px;
-    }
-    .visualiser {
-        width: 50px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-    .icons {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
-        margin: 10px 0;
-    }
-    #logotext {
-        font-size: large;
-    }
-    .dropbtn, .music, .players, .about {
-        font-size: large;
-        padding: 10px;
-    }
-    .navbar li {
-        margin: 0 10px;
-    }
+  .pauses:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .beck:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .forwd:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 200px;
+    height: 100px;
+  }
+  .song {
+    width: 150px;
+    height: 40px;
+  }
+  .player {
+    width: 100px;
+  }
+  .visualiser {
+    width: 50px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons .Linkedin,
+  .icons .Instagram,
+  .icons .DeviantArt {
+    margin: 10px 0;
+  }
+  #logotext {
+    font-size: large;
+  }
+  .dropbtn,
+  .music,
+  .players,
+  .about {
+    font-size: large;
+    padding: 10px;
+  }
+  .navbar li {
+    margin: 0 10px;
+  }
 }
 @media (max-width: 280px) {
-    svg:hover {
-        fill:#FFF;
-        color: #FFF;
-    }
-    #logotext:hover {
-        color:#fff;
-    }
-    .outer {
-        width: 180px;
-        height: 90px;
-    }
-    .song {
-        width: 130px;
-        height: 30px;
-    }
-    .player {
-        width: 80px;
-    }
-    .visualiser {
-        width: 40px;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-    .icons {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons .Linkedin, .icons .Instagram, .icons .DeviantArt {
-        margin: 10px 0;
-    }
-    #logotext {
-        font-size: medium;
-    }
-    .dropbtn, .music, .players, .about {
-        font-size: medium;
-        padding: 8px;
-    }
-    .navbar li {
-        margin: 0 8px;
-    }
+  .pauses:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .beck:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  .forwd:hover {
+    fill: #fff;
+    color: #fff;
+  }
+  #logotext:hover {
+    color: #fff;
+  }
+  .outer {
+    width: 180px;
+    height: 90px;
+  }
+  .song {
+    width: 130px;
+    height: 30px;
+  }
+  .player {
+    width: 80px;
+  }
+  .visualiser {
+    width: 40px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons .Linkedin,
+  .icons .Instagram,
+  .icons .DeviantArt {
+    margin: 10px 0;
+  }
+  #logotext {
+    font-size: medium;
+  }
+  .dropbtn,
+  .music,
+  .players,
+  .about {
+    font-size: medium;
+    padding: 8px;
+  }
+  .navbar li {
+    margin: 0 8px;
+  }
 }
-
- 
-
-
-  
-     
-

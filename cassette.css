@@ -1,258 +1,242 @@
 /* cassette styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
- .box {
-    border: 2px solid var(--site-color2);
-}   
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.box {
+  border: 2px solid var(--site-color2);
+}
 .outer {
-    height: 350px;
-    width: 700px;
-    
-    border-radius: 5%;
+  height: 350px;
+  width: 700px;
 
+  border-radius: 5%;
 }
 .song {
-    height: 100px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    border: 2px dashed var(--site-color2);
-
+  height: 100px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  border: 2px dashed var(--site-color2);
 }
 .deco1 {
-    height: 20px;
-    width: 40px;
-    border-radius: 50px;
-    left: 0;
-    margin-left: 3px;
-    margin-top: 5px;
-    
-
+  height: 20px;
+  width: 40px;
+  border-radius: 50px;
+  left: 0;
+  margin-left: 3px;
+  margin-top: 5px;
 }
 .deco2 {
-    height: 20px;
-    width: 40px;
-    border-radius: 50px;
-    right: 0;
-    margin-right: 3px;
-    margin-top: 5px;
-
+  height: 20px;
+  width: 40px;
+  border-radius: 50px;
+  right: 0;
+  margin-right: 3px;
+  margin-top: 5px;
 }
 
 .round1 {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 80px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 80px;
 }
 .round2 {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    margin-top: 40px;
-    margin-right: 0;
-    margin-left: 80px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 80px;
 }
 .player {
-    height: 80px;
-    width: 300px;
-    display: flex;
-    border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    
+  height: 80px;
+  width: 300px;
+  display: flex;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  justify-content: space-evenly;
 }
 .visualiser {
-    height: 50px;
-    width: 155px;
-    margin-top: auto;
-    margin-bottom: auto;
-
+  height: 50px;
+  width: 155px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .buttons {
-    width: 100%;
-    display: flex;
-    border-radius: 25%;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 20px;
+  width: 100%;
+  display: flex;
+  border-radius: 25%;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .decoration {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    order: 0;
-    margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  order: 0;
+  margin-top: 5px;
 }
 .cassette {
-    /* position: -webkit-sticky; */
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    margin-top: 100px;
+  /* position: -webkit-sticky; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-top: 100px;
 }
 .gear {
-    margin: auto 2px auto 2px;
+  margin: auto 2px auto 2px;
 }
-
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .gear {
-    transform-origin: 50% 50%; /* Adjust based on the gear's center */
-     animation: rotate 5s linear infinite;
-} 
+  transform-origin: 50% 50%; /* Adjust based on the gear's center */
+  animation: rotate 5s linear infinite;
+}
 
 .backward {
-    border-radius: 4px;
-    height: 60px;
-    cursor: pointer;
-    
-
+  border-radius: 4px;
+  height: 60px;
+  cursor: pointer;
 }
 .forward {
-    border-radius: 4px;
-    height: 60px;
-    cursor: pointer;
+  border-radius: 4px;
+  height: 60px;
+  cursor: pointer;
 }
 .play {
-    border-radius: 4px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  border-radius: 4px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-   
-    
 
 #playPauseSVG path {
-    transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
 #playPauseSVG.clicked path {
-    fill: white;
+  fill: white;
 }
 
 .song p {
-    font-family: "VT323", monospace;
-    color: var(--site-color2);
-    display: flex;
-    justify-content: space-evenly;
-    
-    align-items: center;
+  font-family: "VT323", monospace;
+  color: var(--site-color2);
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
 }
-
-
 
 .visualiser {
-    display: inline-flex;
-    box-sizing:border-box;
-    align-items: center;
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
 }
 #progress {
-    -webkit-appearance: none;
-    width: 100%; /* Ensure it fits within the parent */
-    height: 8px; /* Adjust height as needed */
-    background: black; /* Black background */
-    border-radius: 5px;
-    
+  -webkit-appearance: none;
+  width: 100%; /* Ensure it fits within the parent */
+  height: 8px; /* Adjust height as needed */
+  background: black; /* Black background */
+  border-radius: 5px;
 }
 
 /* The track (the background) */
 #progress::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8px;
-    background: var(--site-color2); /* Custom progress color */
-    border-radius: 5px;
+  width: 100%;
+  height: 8px;
+  background: var(--site-color2); /* Custom progress color */
+  border-radius: 5px;
 }
 
 #progress::-moz-range-track {
-    width: 100%;
-    height: 8px;
-    background: var(--site-color2);
-    border-radius: 5px;
+  width: 100%;
+  height: 8px;
+  background: var(--site-color2);
+  border-radius: 5px;
 }
 
 #progress::-ms-track {
-    width: 100%;
-    height: 8px;
-    background: var(--site-color2);
-    border-radius: 5px;
-    border-color: transparent;
-    color: transparent;
+  width: 100%;
+  height: 8px;
+  background: var(--site-color2);
+  border-radius: 5px;
+  border-color: transparent;
+  color: transparent;
 }
 
 /* The slider thumb (the handle) */
 #progress::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 16px; /* Adjust size as needed */
-    height: 16px;
-    background: var(--site-color2); /* Thumb color */
-    border-radius: 50%; /* Circular thumb */
-    cursor: pointer;
-    margin-top: -4px; /* Adjust if needed to align thumb */
+  -webkit-appearance: none;
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  background: var(--site-color2); /* Thumb color */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer;
+  margin-top: -4px; /* Adjust if needed to align thumb */
 }
 
 #progress::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    background: var(--site-color2);
-    border-radius: 100%;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: var(--site-color2);
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 #progress::-ms-thumb {
-    width: 16px;
-    height: 16px;
-    background: var(--site-color2);
-    border-radius: 100%;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: var(--site-color2);
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 /* For focus style */
 #progress:focus {
-    outline: none;
+  outline: none;
 }
 
 #progress:focus::-webkit-slider-runnable-track {
-    background: var(--site-color2);
+  background: var(--site-color2);
 }
 
 #progress:focus::-moz-range-track {
-    background: var(--site-color2);
+  background: var(--site-color2);
 }
 
 #progress:focus::-ms-track {
-    background: var(--site-color2);
+  background: var(--site-color2);
 }
-
-
-
 
 /* Visualiser box beigns here */
 .waveform_line {
-    width: 100%;
-    height: 30px;
-    background-color: #000;
+  width: 100%;
+  height: 30px;
+  background-color: #000;
 }
-
