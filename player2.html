@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nish</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="player_2.css" />
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Turret Road:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="loadingscreen">
+      <div id="preloader">
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <style>
+            .spinner_7uc5 {
+              animation: spinner_3l8F 0.9s linear infinite;
+              animation-delay: -0.9s;
+            }
+            .spinner_RibN {
+              animation-delay: -0.7s;
+            }
+            .spinner_ZAxd {
+              animation-delay: -0.5s;
+            }
+            @keyframes spinner_3l8F {
+              0%,
+              66.66% {
+                animation-timing-function: cubic-bezier(0.14, 0.73, 0.34, 1);
+                y: 6px;
+                height: 12px;
+              }
+              33.33% {
+                animation-timing-function: cubic-bezier(0.65, 0.26, 0.82, 0.45);
+                y: 1px;
+                height: 22px;
+              }
+            }
+          </style>
+          <rect
+            class="spinner_7uc5 spinner_ZAxd"
+            x="1"
+            y="6"
+            width="2.8"
+            height="12"
+          />
+          <rect
+            class="spinner_7uc5 spinner_RibN"
+            x="5.8"
+            y="6"
+            width="2.8"
+            height="12"
+          />
+          <rect class="spinner_7uc5" x="10.6" y="6" width="2.8" height="12" />
+          <rect
+            class="spinner_7uc5 spinner_RibN"
+            x="15.4"
+            y="6"
+            width="2.8"
+            height="12"
+          />
+          <rect
+            class="spinner_7uc5 spinner_ZAxd"
+            x="20.2"
+            y="6"
+            width="2.8"
+            height="12"
+          />
+        </svg>
+        <p id="loadingtext1">Tuning into your favorite vibes...</p>
+        <p id="loadingtext2">No Adds, Only Music ;)</p>
+      </div>
+    </div>
+
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <div id="logoimg">
+                <svg
+                  width="70"
+                  height="49"
+                  viewBox="0 0 70 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Vector"
+                    d="M65.5455 0H4.45455C3.27313 0 2.1401 0.4633 1.30471 1.28798C0.469317 2.11266 0 3.23116 0 4.39744V44.6026C0 45.7688 0.469317 46.8873 1.30471 47.712C2.1401 48.5367 3.27313 49 4.45455 49H65.5455C66.7269 49 67.8599 48.5367 68.6953 47.712C69.5307 46.8873 70 45.7688 70 44.6026V4.39744C70 3.23116 69.5307 2.11266 68.6953 1.28798C67.8599 0.4633 66.7269 0 65.5455 0ZM18.4545 45.2308L23.2273 38.9487H46.7727L51.5455 45.2308H18.4545ZM66.1818 44.6026C66.1818 44.7692 66.1148 44.929 65.9954 45.0468C65.8761 45.1646 65.7142 45.2308 65.5455 45.2308H56.3182L49.2545 35.9333C49.0767 35.6993 48.8461 35.5093 48.581 35.3785C48.316 35.2476 48.0236 35.1795 47.7273 35.1795H22.2727C21.9764 35.1795 21.684 35.2476 21.419 35.3785C21.1539 35.5093 20.9233 35.6993 20.7455 35.9333L13.6818 45.2308H4.45455C4.28577 45.2308 4.12391 45.1646 4.00457 45.0468C3.88523 44.929 3.81818 44.7692 3.81818 44.6026V4.39744C3.81818 4.23083 3.88523 4.07104 4.00457 3.95323C4.12391 3.83542 4.28577 3.76923 4.45455 3.76923H65.5455C65.7142 3.76923 65.8761 3.83542 65.9954 3.95323C66.1148 4.07104 66.1818 4.23083 66.1818 4.39744V44.6026ZM50.2727 10.0513H19.7273C17.1957 10.0513 14.7677 11.0441 12.9776 12.8112C11.1875 14.5784 10.1818 16.9752 10.1818 19.4744C10.1818 21.9735 11.1875 24.3703 12.9776 26.1375C14.7677 27.9047 17.1957 28.8974 19.7273 28.8974H50.2727C52.8043 28.8974 55.2323 27.9047 57.0224 26.1375C58.8125 24.3703 59.8182 21.9735 59.8182 19.4744C59.8182 16.9752 58.8125 14.5784 57.0224 12.8112C55.2323 11.0441 52.8043 10.0513 50.2727 10.0513ZM42.6364 13.8205C41.3932 15.45 40.7209 17.4345 40.7209 19.4744C40.7209 21.5142 41.3932 23.4988 42.6364 25.1282H27.3636C28.6068 23.4988 29.2791 21.5142 29.2791 19.4744C29.2791 17.4345 28.6068 15.45 27.3636 13.8205H42.6364ZM14 19.4744C14 18.3561 14.3359 17.263 14.9652 16.3333C15.5945 15.4035 16.489 14.6788 17.5355 14.2509C18.5821 13.823 19.7336 13.711 20.8446 13.9291C21.9556 14.1473 22.9761 14.6858 23.7771 15.4765C24.578 16.2672 25.1235 17.2746 25.3445 18.3713C25.5655 19.4681 25.4521 20.6049 25.0186 21.638C24.5851 22.6711 23.851 23.5541 22.9092 24.1754C21.9673 24.7966 20.86 25.1282 19.7273 25.1282C18.2083 25.1282 16.7516 24.5325 15.6775 23.4722C14.6034 22.4119 14 20.9739 14 19.4744ZM50.2727 25.1282C49.14 25.1282 48.0327 24.7966 47.0908 24.1754C46.149 23.5541 45.4149 22.6711 44.9814 21.638C44.5479 20.6049 44.4345 19.4681 44.6555 18.3713C44.8765 17.2746 45.422 16.2672 46.2229 15.4765C47.0239 14.6858 48.0444 14.1473 49.1554 13.9291C50.2664 13.711 51.4179 13.823 52.4645 14.2509C53.511 14.6788 54.4055 15.4035 55.0348 16.3333C55.6641 17.263 56 18.3561 56 19.4744C56 20.9739 55.3966 22.4119 54.3225 23.4722C53.2484 24.5325 51.7917 25.1282 50.2727 25.1282Z"
+                  />
+                </svg></div
+            ></a>
+          </li>
+          <li><a id="logotext" href="index.html">NISH</a></li>
+          <li>
+            <ul class="links">
+              <li class="dropdown">
+                <button class="music dropbtn">Music</button>
+                <div class="dropdown-content">
+                  <button class="changeaudio music1 musicselect">
+                    <audio id="audio1">
+                      <source
+                        src="Finally See The Light.mp3"
+                        type="audio/mpeg"
+                      /></audio
+                    >Finally See The Light
+                  </button>
+                  <button class="changeaudio music2 musicselect">
+                    <audio id="audio2">
+                      <source
+                        src="Improv for Evil.mp3"
+                        type="audio/mpeg"
+                      /></audio
+                    >Improv for Evil
+                  </button>
+                  <button class="changeaudio music3 musicselect">
+                    <audio id="audio3">
+                      <source
+                        src="Study and Relax.mp3"
+                        type="audio/mpeg"
+                      /></audio
+                    >Study and Relax
+                  </button>
+                  <button class="changeaudio music4 musicselect">
+                    <audio id="audio4">
+                      <source
+                        src="The Celebrated Minuet.mp3"
+                        type="audio/mpeg"
+                      /></audio
+                    >The Celebrated Minuet
+                  </button>
+                  <button class="changeaudio music5 musicselect">
+                    <audio id="audio5">
+                      <source
+                        src="ludwig-van-beethoven-moonlight-sonata-classical-remix-8097.mp3"
+                        type="audio/mpeg"
+                      /></audio
+                    >Moonlight Sonata
+                  </button>
+                  <input
+                    type="file"
+                    class="uploader"
+                    id="thefile"
+                    accept="audio/*"
+                  />
+                  <span id="uploadLink"> Upload your own music</span>
+                </div>
+              </li>
+              <li class="dropdown">
+                <button class="players dropbtn">Players</button>
+                <div class="dropdown-content">
+                  <a href="index.html">Player 1</a>
+                  <a href="player2.html">Player 2</a>
+                  <a href="#">More Players coming soon</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a class="about" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="Hero">
+      <div class="cassette">
+        <div class="outer box">
+          <div class="topa">
+            <div class="cd">
+              <!-- First SVG -->
+              <div class="svga">
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="200px"
+                  height="200px"
+                  viewBox="0 0 72 72"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M36,3.731C18.206,3.731,3.73,18.207,3.73,36S18.206,68.27,36,68.27c17.793,0,32.27-14.477,32.27-32.27
+		S53.793,3.731,36,3.731z M36,64.27C20.412,64.27,7.73,51.588,7.73,36C7.73,20.413,20.412,7.731,36,7.731S64.27,20.413,64.27,36
+		C64.27,51.588,51.588,64.27,36,64.27z"
+                    />
+                    <path
+                      d="M36,28.479c-4.147,0-7.52,3.373-7.52,7.52c0,4.147,3.374,7.521,7.52,7.521c4.146,0,7.52-3.373,7.52-7.521
+		C43.52,31.852,40.146,28.479,36,28.479z M36,39.52c-1.942,0-3.52-1.578-3.52-3.52c0-1.941,1.579-3.52,3.52-3.52
+		c1.939,0,3.52,1.579,3.52,3.52C39.52,37.941,37.939,39.52,36,39.52z"
+                    />
+                    <path
+                      d="M12.693,38.292c0.552,0,0.977-0.582,0.952-1.136c-0.016-0.35-0.024-0.79-0.024-1.144c0-0.552-0.448-0.988-1-0.988
+		c-0.553,0-1,0.47-1,1.023c0,0.385,0.008,0.816,0.026,1.197c0.025,0.535,0.467,1.047,0.998,1.047
+		C12.66,38.291,12.676,38.291,12.693,38.292z"
+                    />
+                    <path
+                      d="M24.978,55.484c-5.872-3.332-9.894-9.039-11.035-15.662c-0.093-0.543-0.605-0.909-1.155-0.814
+		c-0.544,0.094-0.909,0.61-0.815,1.155c1.244,7.214,5.624,13.433,12.02,17.062c0.156,0.088,0.325,0.129,0.492,0.129
+		c0.349,0,0.687-0.182,0.87-0.506C25.627,56.367,25.458,55.755,24.978,55.484z"
+                    />
+                    <path
+                      d="M23.05,49.173c0.253,0,0.507-0.095,0.7-0.286c0.394-0.388,0.4-1.02,0.013-1.414c-2.597-2.644-4.028-6.14-4.028-9.845
+		c0-0.553-0.448-1-1-1c-0.553,0-1,0.447-1,1c0,4.233,1.634,8.226,4.602,11.246C22.532,49.072,22.791,49.173,23.05,49.173z"
+                    />
+                    <path
+                      d="M26.866,49.857c-0.282-0.162-0.558-0.33-0.828-0.51c-0.461-0.31-1.08-0.183-1.387,0.278
+		c-0.306,0.46-0.181,1.081,0.278,1.386c0.309,0.207,0.626,0.4,0.949,0.584c0.155,0.088,0.325,0.131,0.492,0.131
+		c0.349,0,0.687-0.182,0.872-0.506C27.514,50.74,27.346,50.129,26.866,49.857z"
+                    />
+                    <path
+                      d="M28.213,44.021c-1.897-1.074-3.075-3.096-3.075-5.273c0-0.553-0.448-1-1-1c-0.553,0-1,0.447-1,1
+		c0,2.896,1.567,5.584,4.089,7.016c0.155,0.088,0.325,0.129,0.492,0.129c0.347,0,0.686-0.182,0.87-0.508
+		C28.861,44.904,28.693,44.294,28.213,44.021z"
+                    />
+                    <path
+                      d="M50.025,15.263c-0.444-0.327-1.071-0.23-1.397,0.214c-0.326,0.445-0.229,1.071,0.215,1.397
+		c6.482,4.76,9.925,12.687,8.982,20.688c-0.063,0.547,0.327,1.045,0.877,1.109c0.039,0.006,0.079,0.008,0.118,0.008
+		c0.5,0,0.932-0.375,0.99-0.883C60.838,29.082,57.088,20.448,50.025,15.263z"
+                    />
+                    <path
+                      d="M47.719,21.157c-0.445-0.327-1.072-0.229-1.398,0.214c-0.325,0.445-0.229,1.071,0.216,1.397
+		c4.069,2.987,6.229,7.963,5.637,12.984c-0.063,0.548,0.327,1.046,0.876,1.109c0.04,0.006,0.079,0.008,0.118,0.008
+		c0.5,0,0.933-0.374,0.991-0.882C54.834,30.252,52.367,24.569,47.719,21.157z"
+                    />
+                    <path
+                      d="M45.425,26.173c-0.444-0.326-1.071-0.23-1.397,0.214c-0.326,0.445-0.23,1.071,0.215,1.397
+		c1.755,1.289,2.688,3.435,2.432,5.601c-0.064,0.548,0.327,1.046,0.876,1.11c0.04,0.005,0.079,0.007,0.118,0.007
+		c0.5,0,0.932-0.374,0.991-0.883C48.998,30.739,47.759,27.887,45.425,26.173z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Second SVG -->
+              <div class="svgb">
+                <svg
+                  class=""
+                  fill="#000000"
+                  height="150px"
+                  width="300px"
+                  version="1.1"
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.005 512.005"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <!-- Include your actual SVG path data or elements here -->
+                    <path
+                      d="M496.347,15.373c-20.117-20.139-55.296-20.139-75.413,0c-10.069,10.069-15.616,23.467-15.616,37.717
+      c0,10.624,3.093,20.757,8.853,29.397L3.12,493.539c-4.16,4.16-4.16,10.923,0,15.083c2.091,2.091,4.821,3.115,7.552,3.115
+      c2.731,0,5.461-1.045,7.552-3.115L429.275,97.549c8.64,5.739,18.773,8.853,29.397,8.853c14.251,0,27.648-5.547,37.717-15.616
+      s15.616-23.467,15.616-37.696C512.005,38.819,506.416,25.443,496.347,15.373z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="song box">
+              <p class="songname">Default (Finally See The Light)</p>
+              <audio class="audioPlayer" id="song">
+                <source
+                  class="audioSource"
+                  src="Finally See The Light.mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+              <div class="waveform_line" id="waveform-line"></div>
+            </div>
+          </div>
+
+          <div class="visualiser box">
+            <input type="range" value="0" id="progress" />
+          </div>
+          <div class="buttons">
+            <div class="backward box">
+              <svg
+                class="beck"
+                width="68"
+                height="70"
+                viewBox="0 0 78 73"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="subway:next" filter="url(#filter0_d_3_12)">
+                  <path
+                    id="Vector"
+                    d="M74 53.3695L41.502 36.1848L74 19V53.3695ZM41.502 36.1848V53.3695L9.00391 36.1848L41.502 19V36.1848ZM9.00391 19V53.3695H4V19H9.00391Z"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_3_12"
+                    x="0"
+                    y="0"
+                    width="78"
+                    height="80.3695"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_3_12"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_3_12"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="play box" onclick="playPause()">
+              <svg
+                class="pauses"
+                id="playPauseSVG"
+                width="122"
+                height="95"
+                viewBox="0 0 122 95"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="material-symbols:play-pause">
+                  <path
+                    id="Vector"
+                    d="M25.4167 64.125V30.875L55.9167 47.5L25.4167 64.125ZM66.0833 63.3333V31.6667H76.25V63.3333H66.0833ZM86.4167 63.3333V31.6667H96.5833V63.3333H86.4167Z"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="forward box">
+              <svg
+                class="forwd"
+                width="68"
+                height="70"
+                viewBox="0 0 68 74"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="subway:next">
+                  <path
+                    id="Vector"
+                    d="M0 55.1242L32.498 37.9395L0 20.7547V55.1242ZM32.498 37.9395V55.1242L64.9961 37.9395L32.498 20.7547V37.9395ZM64.9961 20.7547V55.1242H70V20.7547H64.9961Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
